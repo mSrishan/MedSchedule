@@ -32,5 +32,5 @@ public class Doctor {
     private BigDecimal chargesPerOneConsultatent;
     private String doctorPhotoUrl;
     @OneToMany
-    private List<Appoinment> appoinments = new ArrayList<>();
+    private List<Appointment> appointments = new ArrayList<>();
 }
