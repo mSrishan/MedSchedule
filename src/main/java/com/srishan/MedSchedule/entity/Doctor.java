@@ -31,6 +31,6 @@ public class Doctor {
     private String specialization;
     private BigDecimal chargesPerOneConsultatent;
     private String doctorPhotoUrl;
-    @OneToMany
+    @OneToMany(mappedBy = "doctor", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Appointment> appointments = new ArrayList<>();
 }
